@@ -45,7 +45,7 @@ seeks to study strategy performance on gold h1 time frame over a period of time
 gold-rsi-divergence-strategy/
 
 **data/**  
-- raw/                # Exported price data from Pepperstone MT5 (CSV, H1 chart)
+- raw/                # Exported price data from XM Global MT5 (CSV, H1 chart)
 - processed/          # Cleaned datasets ready for analysis
 
 **notebooks/**  
