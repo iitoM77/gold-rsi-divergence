@@ -45,25 +45,25 @@ seeks to study strategy performance on gold h1 time frame over a period of time
 gold-rsi-divergence-strategy/
 
 **data/**  
-    - raw/                # Exported price data from Pepperstone MT5 (CSV, H1 chart)
-    - processed/          # Cleaned datasets ready for analysis
+- raw/                # Exported price data from Pepperstone MT5 (CSV, H1 chart)
+- processed/          # Cleaned datasets ready for analysis
 
 **notebooks/**  
-    - 01_data_extraction.ipynb   # How you pulled data from MT5
-    - 02_strategy_rules.ipynb    # Walkthrough of RSI divergence rules
-    - 03_backtest.ipynb          # Backtesting logic + performance metrics
-    - 04_results_visualization.ipynb # Plots of trades, equity curve, drawdowns
+- 01_data_extraction.ipynb   # How you pulled data from MT5
+- 02_strategy_rules.ipynb    # Walkthrough of RSI divergence rules
+- 03_backtest.ipynb          # Backtesting logic + performance metrics
+- 04_results_visualization.ipynb # Plots of trades, equity curve, drawdowns
 
 **scripts/**  
-    - data_loader.py       # Load raw/processed data
-    - strategy.py          # Encodes buy/sell signal rules
-    - backtester.py        # Runs trades over historical data
-    - plot_tools.py        # Candlestick charts, RSI overlays, trade markers
+- data_loader.py       # Load raw/processed data
+- strategy.py          # Encodes buy/sell signal rules
+- backtester.py        # Runs trades over historical data
+- plot_tools.py        # Candlestick charts, RSI overlays, trade markers
 
 **visuals/**  
-    - equity_curve.png  
-    - sample_trade.png  
-    - rsi_divergence_example.png  
+- equity_curve.png  
+- sample_trade.png  
+- rsi_divergence_example.png  
     
 - requirements.txt         # pandas, numpy, matplotlib, TA-Lib, etc.
 - README.md                # Project overview & usage
