@@ -49,21 +49,21 @@ gold-rsi-divergence-strategy/
 - processed/          # Cleaned datasets ready for analysis
 
 **notebooks/**  
-- 01_data_extraction.ipynb   # How you pulled data from MT5
-- 02_strategy_rules.ipynb    # Walkthrough of RSI divergence rules
-- 03_backtest.ipynb          # Backtesting logic + performance metrics
-- 04_results_visualization.ipynb # Plots of trades, equity curve, drawdowns
+- 01_backtest.ipynb    # Document how the backtest was run (with code + explanation)
+- 02_analysis.ipynb    # Interactive exploration of results
 
 **scripts/**  
-- data_loader.py       # Load raw/processed data
-- strategy.py          # Encodes buy/sell signal rules
-- backtester.py        # Runs trades over historical data
-- plot_tools.py        # Candlestick charts, RSI overlays, trade markers
+- backtest.py          # Your Python backtest simulation code
+- report_parser.py     # Parse backtest CSV into structured DataFrame
+- metrics.py           # Functions for win rate, Sharpe, drawdown, profit factor
+- session_analysis.py  # Break down trades by day/session
+- plot_tools.py        # Equity curve, trade distribution, session charts
 
 **visuals/**  
 - equity_curve.png  
-- sample_trade.png  
-- rsi_divergence_example.png  
+- session_performace.png  
+- day_performance.png  
     
+- app.py                   # Streamlit dashboard (main entry point)
 - requirements.txt         # pandas, numpy, matplotlib, TA-Lib, etc.
 - README.md                # Project overview & usage
